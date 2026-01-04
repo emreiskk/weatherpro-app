@@ -119,7 +119,7 @@ export default function Home() {
       interface DayData {
         totalTemp: number;
         count: number;
-        weather: { icon: string; description: string };
+        weather: { icon: string; description: string; main: string };
       }
 
       const upcomingDays: Record<string, DayData> = {};
