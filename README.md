@@ -1,43 +1,58 @@
-# WeatherPro - Modern Hava Durumu Uygulaması
+<div align="center">
 
-**OpenWeatherMap API** entegrasyonu ile geliştirilmiş, **Next.js 15** tabanlı modern ve responsive hava durumu web uygulaması.
+# 🌤️ WeatherPro
+### Next.js 15 & OpenWeatherMap API ile Geliştirilmiş Modern Hava Durumu Platformu
 
-## 🌟 Özellikler
+[![Canlı Demo](https://img.shields.io/badge/Canlı%20Demo-Vercel-007ACC?style=for-the-badge&logo=vercel&logoColor=white)](https://weatherpro-3kobxibgr-projects-projects-98062c87.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React%2019-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-- **Gerçek Zamanlı Hava Durumu**: Şehir bazlı anlık hava durumu bilgileri
-- **5 Günlük Tahmin**: İleriye dönük detaylı hava tahminleri
-- **24 Saatlik Tahmin**: Saatlik sıcaklık ve hava durumu grafikleri
-- **Hava Kalitesi**: AQI, PM2.5, PM10, O₃ ve NO₂ değerleri
-- **Detaylı Bilgiler**: Rüzgar hızı, basınç, nem, görüş mesafesi
-- **Gün Doğumu/Batımı**: Güneş saatleri bilgisi
-- **Konum Desteği**: Otomatik konum algılama
-- **Animasyonlu İkonlar**: Hava durumuna göre özel tasarlanmış animasyonlu SVG ikonlar
+[🌐 **Canlı Uygulamayı Ziyaret Et**](https://weatherpro-3kobxibgr-projects-projects-98062c87.vercel.app/) • [✉️ **İletişim & Geri Bildirim**](mailto:emreisikdeveloper@gmail.com)
 
-## 🎨 Tasarım & Teknoloji
+</div>
 
-- **Glassmorphism UI**: Modern cam efekti tasarım
-- **Framer Motion**: Akıcı animasyonlar ve geçişler
-- **Recharts**: İnteraktif sıcaklık grafikleri
-- **Responsive**: Tüm cihazlarda mükemmel görünüm
-- **TypeScript**: Tip güvenli kod yapısı
-- **Tailwind CSS**: Modern ve özelleştirilebilir stil sistemi
+---
 
-## 🚀 Teknolojiler
+## 📌 WeatherPro Hakkında
 
-- Next.js 15.1.6
-- React 19
-- TypeScript 5
-- Tailwind CSS 3.4
-- Framer Motion 12.4
-- Recharts
-- Lucide React Icons
+**WeatherPro**, **OpenWeatherMap API** entegrasyonu ile geliştirilmiş, anlık ve ileriye dönük hava tahminlerini modern **Glassmorphism** arayüzü ve akıcı animasyonlarla sunan **Next.js 15** tabanlı responsive web uygulamasıdır.
 
-## 📦 Kurulum
+Kullanıcıların otomatik konum algılama veya şehir araması ile 24 saatlik ve 5 günlük tahminlere, hava kalitesi (AQI) indekslerine, rüzgar/basınç/nem detaylarına ve gün doğumu/batımı grafiklerine anında erişmesini sağlar.
+
+---
+
+## ✨ Önemli Özellikler
+
+- 🌤️ **Gerçek Zamanlı Hava Durumu**: Şehir bazlı anlık sıcaklık, hissedilen sıcaklık ve dinamik hava durumu bilgileri.
+- 📅 **5 Günlük & 24 Saatlik Tahmin**: Detaylı 5 günlük tahmin grid'i ve saatlik sıcaklık değişim grafikleri.
+- 🍃 **Hava Kalitesi İndeksi (AQI)**: PM2.5, PM10, O₃ ve NO₂ hava kirlilik değerlerinin canlı takibi.
+- 📊 **İnteraktif Sıcaklık Grafikleri**: Recharts ile desteklenmiş 12-24 saatlik görsel sıcaklık trendi.
+- 🌅 **Güneş Döngüsü & Detaylar**: Rüzgar hızı/yönü, nem oranı, görüş mesafesi, basınç ve gün doğumu/batımı saatleri.
+- 🎨 **Glassmorphism & Animasyonlar**: Framer Motion ile yumuşak geçişler, cam efektli UI ve dinamik SVG hava durumu ikonları.
+- 📱 **Tam Responsive Tasarım**: Mobil, tablet ve masaüstü cihazlar için özel grid düzenleri.
+
+---
+
+## 🛠️ Teknoloji Yığını ve Mimari
+
+| Katman | Kullanılan Teknolojiler |
+| :--- | :--- |
+| **Web Çerçevesi** | Next.js 15 (App Router), React 19 |
+| **Dil ve Stil** | TypeScript, Tailwind CSS, Glassmorphism UI |
+| **Animasyon & Grafik** | Framer Motion, Recharts, Lucide Icons |
+| **Hava Durumu API** | OpenWeatherMap API (Current, Forecast, Air Pollution) |
+| **Barındırma / Yayın** | Vercel |
+
+---
+
+## 📦 Kurulum ve Çalıştırma
 
 1. Projeyi klonlayın:
 ```bash
-git clone <repository-url>
-cd appweather
+git clone https://github.com/emreiskk/weatherpro-app.git
+cd weatherpro-app
 ```
 
 2. Bağımlılıkları yükleyin:
@@ -45,7 +60,7 @@ cd appweather
 npm install
 ```
 
-3. `.env.local` dosyası oluşturun ve API anahtarınızı ekleyin:
+3. `.env.local` dosyası oluşturun ve OpenWeatherMap API anahtarınızı ekleyin:
 ```env
 NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
 ```
@@ -55,120 +70,11 @@ NEXT_PUBLIC_WEATHER_API_KEY=your_openweathermap_api_key
 npm run dev
 ```
 
-5. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
-
-## 🔑 API Anahtarı
-
-Bu proje [OpenWeatherMap API](https://openweathermap.org/api) kullanmaktadır. Ücretsiz API anahtarı almak için:
-
-1. [OpenWeatherMap](https://openweathermap.org/api) sitesine gidin
-2. Ücretsiz hesap oluşturun
-3. API anahtarınızı `.env.local` dosyasına ekleyin
-
-## 📝 Kullanılan API'ler
-
-- **Current Weather Data**: Anlık hava durumu bilgileri
-- **5 Day / 3 Hour Forecast**: 5 günlük tahmin verileri
-- **Air Pollution API**: Hava kalitesi verileri
-
-## 🎯 Özellik Detayları
-
-### Ana Hava Durumu Kartı
-- Şehir adı ve ülke kodu
-- Anlık sıcaklık (büyük gösterim)
-- Hava durumu açıklaması
-- Animasyonlu hava durumu ikonu
-
-### Detaylar Kartı
-- Hissedilen sıcaklık
-- En yüksek/düşük sıcaklık
-- Nem oranı
-
-### Sıcaklık Grafiği
-- 12 saatlik sıcaklık trendi
-- İnteraktif grafik (Recharts)
-- Responsive tasarım
-
-### Hava Durumu Detayları
-- Rüzgar hızı (m/s)
-- Basınç (hPa)
-- Görüş mesafesi (km)
-- Rüzgar yönü (derece)
-
-### 5 Günlük Tahmin
-- Grid layout (responsive)
-- Her gün için ortalama sıcaklık
-- Hava durumu ikonu ve açıklama
-
-### Hava Kalitesi
-- AQI (Air Quality Index)
-- PM2.5 ve PM10 değerleri
-- O₃ (Ozon) değeri
-- NO₂ (Nitrojen Dioksit) değeri
-
-### Gün Işığı
-- Gündoğumu saati
-- Günbatımı saati
-- Renkli icon'lar ile görsel gösterim
-
-### Saatlik Hava Durumu
-- 24 saatlik tahmin
-- Yatay scroll
-- Her saat için icon ve sıcaklık
-
-## 🎨 Tasarım Sistemi
-
-### Renkler
-- Glassmorphism efekt: `bg-white/10`, `bg-white/5`
-- Blur efekt: `backdrop-blur-xl`
-- Dinamik gradient arka planlar
-
-### Animasyonlar
-- Framer Motion ile smooth geçişler
-- Hover efektleri
-- Scroll animasyonları
-- Özel hava durumu icon animasyonları
-
-### Responsive Breakpoints
-- Mobile: `< 768px`
-- Tablet: `768px - 1024px`
-- Desktop: `> 1024px`
-
-## 📱 Responsive Tasarım
-
-Uygulama tüm ekran boyutlarında optimize edilmiştir:
-- **Mobil**: 2 kolonlu grid'ler
-- **Tablet**: 3 kolonlu grid'ler
-- **Masaüstü**: 5 kolonlu grid'ler
-
-## 🛠️ Geliştirme
-
-```bash
-# Geliştirme sunucusu
-npm run dev
-
-# Production build
-npm run build
-
-# Production sunucusu
-npm run start
-
-# Linting
-npm run lint
-```
-
-## 📄 Lisans
-
-© 2025 EMRE IŞIK - Tüm hakları saklıdır.
-
-## 🤝 Katkıda Bulunma
-
-Katkılarınızı bekliyoruz! Pull request göndermekten çekinmeyin.
-
-## 📧 İletişim
-
-Sorularınız için issue açabilirsiniz.
-
 ---
 
-**Not**: Bu proje eğitim ve portfolyo amaçlı geliştirilmiştir.
+<div align="center">
+
+**Mehmet Emre Işık** Tarafından Tasarlandı ve Geliştirildi  
+© 2026 WeatherPro. Tüm Hakları Saklıdır.
+
+</div>
